@@ -1,4 +1,4 @@
-package blatt4;
+package disy;
 
 import java.util.HashMap;
 import java.util.Map;

@@ -1,4 +1,4 @@
-package blatt4;
+package disy;
 
 public abstract class DistributedSystem {
 	private final Process[] processes;

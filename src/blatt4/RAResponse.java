@@ -1,6 +1,6 @@
 package blatt4;
-import blatt4.Message;
-import blatt4.Process;
+import disy.Message;
+import disy.Process;
 
 
 public class RAResponse extends Message {
