@@ -6,6 +6,7 @@ import disy.DistributedSystem;
 import disy.Process;
 
 public class RADistributedSystem extends DistributedSystem {
+
 	RADistributedSystem(int numProcesses) {
 		super(numProcesses);
 	}
@@ -36,7 +37,7 @@ public class RADistributedSystem extends DistributedSystem {
 	public static void main(String[] args) throws InterruptedException {
 		RADistributedSystem disy = new RADistributedSystem(4);
 		disy.run();
-		TimeUnit.SECONDS.sleep(20);
+		TimeUnit.SECONDS.sleep(10);
 		disy.shutdown();
 	}
 
