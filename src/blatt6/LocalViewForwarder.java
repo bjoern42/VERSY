@@ -7,15 +7,15 @@ import forum.framework.IForumView;
 import forum.framework.Position;
 
 public class LocalViewForwarder implements IForumView{
-	private LocalViewReceiver localViewReceiver= null;
+	private IForumView forumView= null;
 	
-	public LocalViewForwarder(){
-		localViewReceiver = LocalViewReceiver.getInstance();
+	public LocalViewForwarder(IForumView view){
+		forumView = view;
 	}
 	
 	@Override
 	public void notifyView(Map<String, Position> arg0) throws IOException {
-		localViewReceiver.notifyView(arg0);
+		forumView.notifyView(arg0);
 	}
 
 }
