@@ -54,7 +54,7 @@ public class RmiModelReceiver implements IRemoteForumModel, Runnable{
 
 	@Override
 	public void registerView(String arg0, IForumView arg1)throws AlreadyBoundException, IOException {
-		forumModel.registerView(arg0, arg1);
+		forumModel.registerView(arg0, new RmiViewForwarder(arg1));
 	}
 	
 	@Override

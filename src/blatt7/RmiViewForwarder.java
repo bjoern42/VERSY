@@ -3,13 +3,13 @@ package blatt7;
 import java.io.IOException;
 import java.util.Map;
 
+import forum.framework.IForumView;
 import forum.framework.Position;
 
 public class RmiViewForwarder implements IRemoteForumView{
-	private IRemoteForumView forumView= null;
+	private IForumView forumView= null;
 	
-	public RmiViewForwarder(IRemoteForumView view){
-		System.out.println("test");
+	public RmiViewForwarder(IForumView view){
 		forumView = view;
 	}
 	
